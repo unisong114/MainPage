@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<article class="detail-page">
+  <div class="container detail-page--book">
+    <div class="book-cover-placeholder" aria-hidden="true">사진</div>
+    <div>
+      <p class="detail-page__eyebrow">저서</p>
+      <h1 class="detail-page__title">{{ page.title }}</h1>
+      {% if page.publisher or page.published_date %}
+      <ul class="detail-page__meta">
+        {% if page.publisher %}<li><strong>출판사:</strong> {{ page.publisher }}</li>{% endif %}
+        {% if page.published_date %}<li><strong>출간일:</strong> {{ page.published_date }}</li>{% endif %}
+      </ul>
+      {% endif %}
+      <div class="detail-page__body">
+        {{ content }}
+      </div>
+      {% if page.purchase_url %}
+      <a class="btn btn--primary" href="{{ page.purchase_url }}">구매하러 가기</a>
+      {% endif %}
+    </div>
+  </div>
+</article>

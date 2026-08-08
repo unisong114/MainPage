@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<article class="detail-page">
+  <div class="container">
+    <p class="detail-page__eyebrow">강의 커리큘럼</p>
+    <h1 class="detail-page__title">{{ page.title }}</h1>
+    {% if page.audience or page.duration %}
+    <ul class="detail-page__meta">
+      {% if page.audience %}<li><strong>대상:</strong> {{ page.audience }}</li>{% endif %}
+      {% if page.duration %}<li><strong>시간:</strong> {{ page.duration }}</li>{% endif %}
+    </ul>
+    {% endif %}
+    <div class="detail-page__body">
+      {{ content }}
+    </div>
+    <a class="btn btn--primary" href="{{ '/contact/' | relative_url }}">이 강의 문의하기</a>
+  </div>
+</article>

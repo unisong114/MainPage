@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<article class="detail-page">
+  <div class="container detail-page--narrow">
+    <p class="detail-page__eyebrow">{{ page.date | date: "%Y.%m.%d" }}</p>
+    <h1 class="detail-page__title">{{ page.title }}</h1>
+    <div class="detail-page__body">
+      {{ content }}
+    </div>
+    <a class="btn btn--ghost" href="{{ '/content/' | relative_url }}">← 목록으로</a>
+  </div>
+</article>
