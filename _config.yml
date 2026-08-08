@@ -4,7 +4,8 @@ lang: ko
 
 email: unisong114@gmail.com
 
-url: "https://yhsong.github.io"
+url: "https://songyunhee.netlify.app"
+repository: unisong114/MainPage
 
 markdown: kramdown
 plugins:
