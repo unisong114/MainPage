@@ -129,6 +129,13 @@ a {
   }
 }
 
+// --- 푸터 ---
+.site-footer__inner {
+  text-align: center;
+  padding: 32px 0;
+  color: var(--color-muted);
+}
+
 // --- 히어로 ---
 .hero {
   background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary) 55%, var(--color-accent));
