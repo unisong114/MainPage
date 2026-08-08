@@ -94,8 +94,23 @@ a {
 }
 
 .site-header__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-weight: 800;
   font-size: 1.2rem;
+}
+
+.site-header__badges {
+  display: flex;
+  gap: 6px;
+}
+
+.site-header__badge {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .site-header__nav {
@@ -284,6 +299,12 @@ a {
   justify-content: center;
   color: var(--color-muted);
   font-size: 0.8rem;
+}
+
+.detail-page__cert-badge {
+  height: 96px;
+  width: 96px;
+  object-fit: contain;
 }
 
 // --- 후기 ---

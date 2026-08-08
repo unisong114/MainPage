@@ -2,22 +2,33 @@
 layout: page
 title: About Me
 ---
-<!-- TODO: 실제 프로필 사진, 경력, 자격/커뮤니티 활동으로 교체 -->
-<p>Power BI, Microsoft Copilot 등 Microsoft 기술을 기반으로 기업 강의, 데이터 자동화 개발, 도서 집필을 진행하는 1인기업가 송영훈입니다.</p>
+<!-- TODO: 프로필 사진(배경 제거본)을 assets/images/profile.png 로 추가 후 여기에 <img> 삽입 -->
+<p>송윤희 / unisong114@gmail.com<br>데이터 분석 및 시각화, MS-Office 활용 강의, 컨설팅 및 개발을 진행하는 1인기업가입니다.</p>
 
-<h2>경력</h2>
+<h2>주요 경력</h2>
 <ul>
-  <li>TODO — 경력 사항 1</li>
-  <li>TODO — 경력 사항 2</li>
-  <li>TODO — 경력 사항 3</li>
+  <li>현) 앤앤에스컨설팅 대표</li>
+  <li>현) 한국열린사이버대학교 겸임교수</li>
+  <li>현) Microsoft MVP – Power BI (2018~)</li>
+  <li>현) MCT (Microsoft Certified Trainer, 2020~)</li>
+  <li>전) 나이스지니데이타(주) BI팀 팀장</li>
+  <li>전) PGE Holdings 교육팀 팀장</li>
 </ul>
 
 <h2>자격 및 커뮤니티 활동</h2>
-<ul>
-  <li>TODO — 자격증 / MVP 등 커뮤니티 활동</li>
-</ul>
+<div class="logo-row">
+  <img src="{{ '/assets/images/2026_mvp.png' | relative_url }}" alt="Microsoft MVP" class="detail-page__cert-badge">
+  <img src="{{ '/assets/images/2026_mct.png' | relative_url }}" alt="Microsoft Certified Trainer" class="detail-page__cert-badge">
+</div>
 
-<h2>언론 및 출판 이력</h2>
-<ul>
-  <li>TODO — 언론 인터뷰, 기고, 출판 이력</li>
-</ul>
+<h2>저서</h2>
+<div class="card-grid">
+  {% assign books = site.books | sort: "order" %}
+  {% for book in books %}
+  <div class="card">
+    <p class="card__title">{{ book.title }}</p>
+    <a class="card__link" href="{{ book.url | relative_url }}">책 소개 보기 →</a>
+  </div>
+  {% endfor %}
+</div>
+<p>외 다수 · <a href="{{ '/books/' | relative_url }}">전체 도서 보기 →</a></p>
