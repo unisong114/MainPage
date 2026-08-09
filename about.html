@@ -5,7 +5,7 @@ title: About Me
 <section class="section">
   <div class="container">
     <!-- TODO: 프로필 사진(배경 제거본)을 assets/images/profile.png 로 교체 -->
-    <div class="profile-intro">
+    <div class="profile-intro profile-intro--centered">
       <img src="{{ '/assets/images/profile1.png' | relative_url }}" alt="송윤희 프로필 사진" class="profile-intro__photo">
       <div>
         <p class="detail-page__eyebrow">Microsoft MVP · MCT</p>
@@ -100,46 +100,17 @@ title: About Me
       <li><span class="profile-timeline__period">2004.12</span>워드프로세서 1급 — 대한상공회의소</li>
       <li><span class="profile-timeline__period">1999.03</span>MCP (Microsoft Certified Professional) — Microsoft</li>
     </ul>
-    <div class="logo-row" style="margin-top: 24px;">
-      <img src="{{ '/assets/images/2026_mvp.png' | relative_url }}" alt="Microsoft MVP" class="detail-page__cert-badge">
-      <img src="{{ '/assets/images/2026_mct.png' | relative_url }}" alt="Microsoft Certified Trainer" class="detail-page__cert-badge">
-    </div>
   </div>
 </section>
 
 <section class="section section--soft">
   <div class="container">
-    <p class="detail-page__eyebrow">05. Major Clients</p>
-    <h2 class="section__title">주요 업체 강의 경력</h2>
-    <div class="card-grid">
-      <div class="card">
-        <p class="card__title">기업</p>
-        <p class="card__desc">Microsoft, 삼성화재, 삼성전자, 삼성SDI, 삼성바이오로직스, LS그룹, GS건설, 포스코E&amp;C, SK이노베이션, SKIET, kt ds, 한국투자증권, DB그룹, 동양생명, 현대백화점, 현대홈쇼핑, 쿠팡풀필먼트서비스, 한국타이어, 한국알콜산업, 대상, 스타벅스코리아, 하이트진로, 쿠라레코리아, 오스템임플란트, 앰코코리아, DRB동일, 뷰웍스 등 다수</p>
-      </div>
-      <div class="card">
-        <p class="card__title">공기관</p>
-        <p class="card__desc">서울시인재개발원, 국가공무원인재개발원, 상하수도협회, 인천시교육청, 인천시교육연수원, 한국보건산업진흥원, 성남시교육연수원, 천안시지속발전협의회 등</p>
-      </div>
-      <div class="card">
-        <p class="card__title">대학교</p>
-        <p class="card__desc">서울대학교, 중앙대학교, 숙명여자대학교, 국민대학교, 아주대학교, 동국대학교, 동덕여자대학교, 경인교육대학교, 부산교육대학교, 동남보건대학교 등</p>
-      </div>
-      <div class="card">
-        <p class="card__title">기타</p>
-        <p class="card__desc">서울삼성병원, 법무법인 율촌, 필립모리스, 스카니아코리아, JTI, 까르티에, 셀트리온, 쿠퍼비전, 다케다제약, 멀티캠퍼스, 휴넷, IGM세계경영연구원, 오피스튜터 등</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <p class="detail-page__eyebrow">06. Publications</p>
+    <p class="detail-page__eyebrow">05. Publications</p>
     <h2 class="section__title">저서</h2>
     {% assign books = site.books | sort: "order" %}
     {% assign featured_book = books | first %}
     <div class="featured-book">
-      <img src="{{ '/assets/images/book1.png' | relative_url }}" alt="{{ featured_book.title }} 표지" class="featured-book__cover">
+      <img src="https://image.yes24.com/goods/194523745/XL" alt="{{ featured_book.title }} 표지" class="featured-book__cover">
       <div>
         <p class="card__title" style="font-size: 1.3rem;">{{ featured_book.title }}</p>
         <ul class="profile-timeline" style="margin-top: 12px;">
@@ -152,14 +123,60 @@ title: About Me
     </div>
 
     <p style="margin-top: 40px; color: var(--color-muted);">그 외 집필 도서</p>
-    <img src="{{ '/assets/images/book2.png' | relative_url }}" alt="그 외 집필 도서 목록" style="width: 100%; border-radius: 12px; margin-top: 12px;">
-    <p style="margin-top: 12px;"><a href="{{ '/books/' | relative_url }}">전체 도서 보기 →</a></p>
+    <img src="{{ '/assets/images/book1.png' | relative_url }}" alt="그 외 집필 도서 목록 1" style="width: 100%; border-radius: 12px; margin-top: 12px;">
+    <img src="{{ '/assets/images/book2.png' | relative_url }}" alt="그 외 집필 도서 목록 2" style="width: 100%; border-radius: 12px; margin-top: 12px;">
+  </div>
+</section>
+
+<section class="section">
+  <div class="container detail-page--narrow">
+    <p class="detail-page__eyebrow">06. Major Clients</p>
+    <h2 class="section__title">주요 업체 강의 경력</h2>
+    <div class="profile-client-list">
+      <div class="profile-client-list__item">
+        <p class="card__title">기업</p>
+        <p class="card__desc">Microsoft, 삼성화재, 삼성전자, 삼성SDI, 삼성바이오로직스, LS그룹, GS건설, 포스코E&amp;C, SK이노베이션, SKIET, kt ds, 한국투자증권, DB그룹, 동양생명, 현대백화점, 현대홈쇼핑, 쿠팡풀필먼트서비스, 한국타이어, 한국알콜산업, 대상, 스타벅스코리아, 하이트진로, 쿠라레코리아, 오스템임플란트, 앰코코리아, DRB동일, 뷰웍스 등 다수</p>
+      </div>
+      <div class="profile-client-list__item">
+        <p class="card__title">공기관</p>
+        <p class="card__desc">서울시인재개발원, 국가공무원인재개발원, 상하수도협회, 인천시교육청, 인천시교육연수원, 한국보건산업진흥원, 성남시교육연수원, 천안시지속발전협의회 등</p>
+      </div>
+      <div class="profile-client-list__item">
+        <p class="card__title">대학교</p>
+        <p class="card__desc">서울대학교, 중앙대학교, 숙명여자대학교, 국민대학교, 아주대학교, 동국대학교, 동덕여자대학교, 경인교육대학교, 부산교육대학교, 동남보건대학교 등</p>
+      </div>
+      <div class="profile-client-list__item">
+        <p class="card__title">기타</p>
+        <p class="card__desc">서울삼성병원, 법무법인 율촌, 필립모리스, 스카니아코리아, JTI, 까르티에, 셀트리온, 쿠퍼비전, 다케다제약, 멀티캠퍼스, 휴넷, IGM세계경영연구원, 오피스튜터 등</p>
+      </div>
+    </div>
   </div>
 </section>
 
 <section class="section section--soft">
+  <div class="container detail-page--narrow">
+    <p class="detail-page__eyebrow">07. Projects &amp; Hackathons</p>
+    <h2 class="section__title">프로젝트 및 해커톤/개발캠프 수행</h2>
+    <ul class="profile-timeline">
+      <li><span class="profile-timeline__period">2025.09</span>한국알콜산업, Power BI 교육 및 개별 프로젝트 컨설팅</li>
+      <li><span class="profile-timeline__period">2024.11</span>S-Oil, Power BI 교육 및 개발 캠프 컨설팅</li>
+      <li><span class="profile-timeline__period">2024.09</span>SK이노베이션, Power BI 교육 및 개발 캠프 컨설팅</li>
+      <li><span class="profile-timeline__period">2021.08</span>리치몬트그룹 까르띠에, Power BI 교육 및 개별 프로젝트 컨설팅</li>
+      <li><span class="profile-timeline__period">2021.04</span>GS건설, Power BI 해커톤(HOVERING) 교육 및 컨설팅</li>
+      <li><span class="profile-timeline__period">2021.10</span>강서구 스마트도시 기본 계획 대시보드 개발 프로젝트</li>
+      <li><span class="profile-timeline__period">2021.01</span>OB맥주, 주류 구매 고객 및 상권 분석 대시보드 개발 프로젝트</li>
+      <li><span class="profile-timeline__period">2020.10</span>필립모리스코리아, CDW(Commercial Data Warehouse) 구축 프로젝트</li>
+      <li><span class="profile-timeline__period">2020.08</span>SK건설, 부문별 KPI 대시보드 개발 프로젝트</li>
+      <li><span class="profile-timeline__period">2020.04</span>JTI Korea, 담배 구매 고객 및 패턴 분석 대시보드 개발 프로젝트</li>
+      <li><span class="profile-timeline__period">2019.06</span>LS오토모티브, 부서별 데이터 분석 및 시각화 프로젝트 컨설팅</li>
+      <li><span class="profile-timeline__period">2019.09</span>서울디지털재단, 도시문제 해결을 위한 데이터 분석 및 시각화 과정 개발</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
   <div class="container">
-    <p class="detail-page__eyebrow">07. Online Courses</p>
+    <p class="detail-page__eyebrow">08. Online Courses</p>
     <h2 class="section__title">주요 온라인 교육 및 집필</h2>
     <ul class="profile-timeline">
       <li><span class="profile-timeline__period">2025.05</span>쿠팡풀필먼트서비스, &lt;Power BI 기본, 심화&gt; 사내 온라인 과정 개발</li>
@@ -180,27 +197,6 @@ title: About Me
       <li><span class="profile-timeline__period">2017.04</span>비제이퍼블릭, &lt;데이터가 돋보이는 Microsoft Power BI&gt; 공저</li>
       <li><span class="profile-timeline__period">2017.03</span>시대인, &lt;엑셀 2016&gt; 집필</li>
       <li><span class="profile-timeline__period">2011.08</span>디지털북스, &lt;엑셀&amp;파워포인트 2010&gt; 집필</li>
-    </ul>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container detail-page--narrow">
-    <p class="detail-page__eyebrow">08. Projects &amp; Hackathons</p>
-    <h2 class="section__title">프로젝트 및 해커톤/개발캠프 수행</h2>
-    <ul class="profile-timeline">
-      <li><span class="profile-timeline__period">2025.09</span>한국알콜산업, Power BI 교육 및 개별 프로젝트 컨설팅</li>
-      <li><span class="profile-timeline__period">2024.11</span>S-Oil, Power BI 교육 및 개발 캠프 컨설팅</li>
-      <li><span class="profile-timeline__period">2024.09</span>SK이노베이션, Power BI 교육 및 개발 캠프 컨설팅</li>
-      <li><span class="profile-timeline__period">2021.08</span>리치몬트그룹 까르띠에, Power BI 교육 및 개별 프로젝트 컨설팅</li>
-      <li><span class="profile-timeline__period">2021.04</span>GS건설, Power BI 해커톤(HOVERING) 교육 및 컨설팅</li>
-      <li><span class="profile-timeline__period">2021.10</span>강서구 스마트도시 기본 계획 대시보드 개발 프로젝트</li>
-      <li><span class="profile-timeline__period">2021.01</span>OB맥주, 주류 구매 고객 및 상권 분석 대시보드 개발 프로젝트</li>
-      <li><span class="profile-timeline__period">2020.10</span>필립모리스코리아, CDW(Commercial Data Warehouse) 구축 프로젝트</li>
-      <li><span class="profile-timeline__period">2020.08</span>SK건설, 부문별 KPI 대시보드 개발 프로젝트</li>
-      <li><span class="profile-timeline__period">2020.04</span>JTI Korea, 담배 구매 고객 및 패턴 분석 대시보드 개발 프로젝트</li>
-      <li><span class="profile-timeline__period">2019.06</span>LS오토모티브, 부서별 데이터 분석 및 시각화 프로젝트 컨설팅</li>
-      <li><span class="profile-timeline__period">2019.09</span>서울디지털재단, 도시문제 해결을 위한 데이터 분석 및 시각화 과정 개발</li>
     </ul>
   </div>
 </section>

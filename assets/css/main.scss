@@ -461,6 +461,15 @@ a {
   flex-wrap: wrap;
 }
 
+.profile-intro--centered {
+  justify-content: center;
+  text-align: center;
+}
+
+.profile-intro--centered .profile-stats {
+  justify-content: center;
+}
+
 .profile-intro__photo {
   width: 180px;
   height: 240px;
@@ -514,4 +523,17 @@ a {
   width: 220px;
   border-radius: 12px;
   flex-shrink: 0;
+}
+
+.profile-client-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.profile-client-list__item {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: var(--radius);
+  padding: 20px 28px;
 }
