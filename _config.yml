@@ -9,6 +9,7 @@ baseurl: ""
 repository: unisong114/MainPage
 
 markdown: kramdown
+permalink: pretty
 plugins:
   - jekyll-feed
 
