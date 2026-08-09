@@ -118,7 +118,10 @@ title: About Me
           <li><span class="profile-timeline__period">저자</span>{{ featured_book.author }}</li>
           <li><span class="profile-timeline__period">ISBN</span>{{ featured_book.isbn }}</li>
         </ul>
-        <a class="btn btn--primary" style="margin-top: 20px;" href="{{ featured_book.purchase_url }}" target="_blank" rel="noopener">구매하러 가기</a>
+        <div style="margin-top: 20px; display: flex; gap: 12px;">
+          <a class="btn btn--primary" href="{{ featured_book.purchase_url }}" target="_blank" rel="noopener">YES24</a>
+          <a class="btn btn--primary" href="https://product.kyobobook.co.kr/detail/S000220698837" target="_blank" rel="noopener">교보문고</a>
+        </div>
       </div>
     </div>
 
