@@ -134,20 +134,33 @@ title: About Me
 
 <section class="section">
   <div class="container">
-    <p class="detail-page__eyebrow">06. Publications &amp; Online Courses</p>
+    <p class="detail-page__eyebrow">06. Publications</p>
     <h2 class="section__title">저서</h2>
-    <div class="card-grid">
-      {% assign books = site.books | sort: "order" %}
-      {% for book in books %}
-      <div class="card">
-        <p class="card__title">{{ book.title }}</p>
-        <a class="card__link" href="{{ book.url | relative_url }}">책 소개 보기 →</a>
+    {% assign books = site.books | sort: "order" %}
+    {% assign featured_book = books | first %}
+    <div class="featured-book">
+      <img src="{{ '/assets/images/book1.png' | relative_url }}" alt="{{ featured_book.title }} 표지" class="featured-book__cover">
+      <div>
+        <p class="card__title" style="font-size: 1.3rem;">{{ featured_book.title }}</p>
+        <ul class="profile-timeline" style="margin-top: 12px;">
+          <li><span class="profile-timeline__period">출간일</span>{{ featured_book.published_date }}</li>
+          <li><span class="profile-timeline__period">저자</span>{{ featured_book.author }}</li>
+          <li><span class="profile-timeline__period">ISBN</span>{{ featured_book.isbn }}</li>
+        </ul>
+        <a class="btn btn--primary" style="margin-top: 20px;" href="{{ featured_book.purchase_url }}" target="_blank" rel="noopener">구매하러 가기</a>
       </div>
-      {% endfor %}
     </div>
-    <p style="margin-top: 12px;"><a href="{{ '/books/' | relative_url }}">전체 도서 보기 →</a></p>
 
-    <h3 style="margin-top: 48px;">주요 온라인 교육 및 집필</h3>
+    <p style="margin-top: 40px; color: var(--color-muted);">그 외 집필 도서</p>
+    <img src="{{ '/assets/images/book2.png' | relative_url }}" alt="그 외 집필 도서 목록" style="width: 100%; border-radius: 12px; margin-top: 12px;">
+    <p style="margin-top: 12px;"><a href="{{ '/books/' | relative_url }}">전체 도서 보기 →</a></p>
+  </div>
+</section>
+
+<section class="section section--soft">
+  <div class="container">
+    <p class="detail-page__eyebrow">07. Online Courses</p>
+    <h2 class="section__title">주요 온라인 교육 및 집필</h2>
     <ul class="profile-timeline">
       <li><span class="profile-timeline__period">2025.05</span>쿠팡풀필먼트서비스, &lt;Power BI 기본, 심화&gt; 사내 온라인 과정 개발</li>
       <li><span class="profile-timeline__period">2024.08</span>휴넷, &lt;오피스 마스터가 알려주는 진짜 엑셀&gt; 과정 개발</li>
@@ -171,9 +184,9 @@ title: About Me
   </div>
 </section>
 
-<section class="section section--soft">
+<section class="section">
   <div class="container detail-page--narrow">
-    <p class="detail-page__eyebrow">07. Projects &amp; Hackathons</p>
+    <p class="detail-page__eyebrow">08. Projects &amp; Hackathons</p>
     <h2 class="section__title">프로젝트 및 해커톤/개발캠프 수행</h2>
     <ul class="profile-timeline">
       <li><span class="profile-timeline__period">2025.09</span>한국알콜산업, Power BI 교육 및 개별 프로젝트 컨설팅</li>
