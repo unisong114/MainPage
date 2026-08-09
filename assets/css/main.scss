@@ -505,6 +505,11 @@ a {
   border-bottom: 1px solid #e5e7eb;
 }
 
+.profile-timeline--compact li {
+  padding: 4px 0;
+  border-bottom: none;
+}
+
 .profile-timeline__period {
   flex: 0 0 160px;
   color: var(--color-muted);
