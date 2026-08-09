@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
-gem "github-pages", group: :jekyll_plugins
-gem "jekyll-feed"
+gem "jekyll", "~> 4.3"
+gem "jekyll-feed", group: :jekyll_plugins
 
 # Windows/JRuby 환경 타임존 데이터 보정용
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
