@@ -3,14 +3,30 @@ layout: default
 title: 집필/도서
 ---
 <section class="section">
-  <div class="container" style="text-align:center;">
-    <p class="detail-page__eyebrow">저서 소개</p>
-    <h1 class="section__title" style="font-size:2.2rem; margin-bottom:48px;">집필/도서</h1>
-    <img src="{{ '/assets/images/book1.png' | relative_url }}" alt="집필 도서 1" style="width:100%; max-width:700px; border-radius:12px; margin-bottom:20px;">
-    <img src="{{ '/assets/images/book2.png' | relative_url }}" alt="집필 도서 2" style="width:100%; max-width:700px; border-radius:12px; margin-bottom:32px;">
-    <div style="display:flex; flex-direction:column; gap:2px;">
-      <p class="card__title" style="margin:0;">쉽게 배워 바로 쓰는 POWER BI | 성안당 | 송윤희</p>
-      <p style="margin:0;"><a class="card__link" href="https://www.yes24.com/product/goods/194523745">https://www.yes24.com/product/goods/194523745</a></p>
+  <div class="container">
+    <p class="detail-page__eyebrow" style="text-align:center;">저서 소개</p>
+    <h1 class="section__title" style="font-size:2.2rem; margin-bottom:48px; text-align:center;">집필/도서</h1>
+
+    {% assign books = site.books | sort: "order" %}
+    {% assign featured_book = books | first %}
+    <div class="featured-book">
+      <img src="https://image.yes24.com/goods/194523745/XL" alt="{{ featured_book.title }} 표지" class="featured-book__cover">
+      <div>
+        <p class="card__title" style="font-size: 1.3rem; margin-bottom: 4px;">{{ featured_book.title }}</p>
+        <ul class="profile-timeline profile-timeline--tight">
+          <li><span class="profile-timeline__period">출간일</span>{{ featured_book.published_date }}</li>
+          <li><span class="profile-timeline__period">저자</span>{{ featured_book.author }}</li>
+          <li><span class="profile-timeline__period">ISBN</span>{{ featured_book.isbn }}</li>
+        </ul>
+        <div style="margin-top: 12px; display: flex; gap: 12px;">
+          <a class="btn btn--primary" href="{{ featured_book.purchase_url }}" target="_blank" rel="noopener">YES24</a>
+          <a class="btn btn--primary" href="https://product.kyobobook.co.kr/detail/S000220698837" target="_blank" rel="noopener">교보문고</a>
+        </div>
+      </div>
     </div>
+
+    <p style="margin-top: 20px; margin-bottom: 8px; color: var(--color-muted);">그 외 집필 도서</p>
+    <img src="{{ '/assets/images/books.png' | relative_url }}" alt="그 외 집필 도서 목록" style="width: 100%; border-radius: 12px;">
+
   </div>
 </section>

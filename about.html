@@ -9,9 +9,9 @@ title: About Me
       <img src="{{ '/assets/images/profile1.png' | relative_url }}" alt="송윤희 프로필 사진" class="profile-intro__photo">
       <div>
         <p class="detail-page__eyebrow">Microsoft MVP · MCT</p>
-        <h1 class="detail-page__title" style="margin-bottom: 8px;">송윤희 Yunhee Song</h1>
+        <h1 class="detail-page__title" style="margin-bottom: 8px;">송윤희(Yunhee Song)</h1>
         <p class="section__desc" style="margin-bottom: 20px;">Power BI · Microsoft 365 Copilot 전문 강사 · 엘앤에스컨설팅 대표</p>
-        <div class="profile-stats">
+        <div class="profile-stats profile-stats--row">
           <div class="profile-stats__item">
             <p class="stats__number" style="color: var(--color-primary);">25+</p>
             <p class="stats__label">연간 교육/컨설팅 경력</p>
@@ -22,11 +22,7 @@ title: About Me
           </div>
           <div class="profile-stats__item">
             <p class="stats__number" style="color: var(--color-primary);">2020~</p>
-            <p class="stats__label">MCT (Microsoft Certified Trainer)</p>
-          </div>
-          <div class="profile-stats__item">
-            <p class="stats__number" style="color: var(--color-primary);">KR</p>
-            <p class="stats__label">교육 언어</p>
+            <p class="stats__label">MCT (Microsoft<br>Certified Trainer)</p>
           </div>
         </div>
       </div>
@@ -35,40 +31,55 @@ title: About Me
 </section>
 
 <section class="section section--soft">
+  <div class="container profile-nav-wrap">
+    <nav class="profile-nav">
+      <a href="#bio">약력</a>
+      <a href="#areas">강의 분야</a>
+      <a href="#publications">저서</a>
+      <a href="#clients">주요 업체 강의 경력</a>
+      <a href="#projects">프로젝트/해커톤</a>
+      <a href="#courses">온라인 교육·집필</a>
+      <a href="#career">학력 및 주요 경력</a>
+      <a href="#credentials">자격 사항</a>
+    </nav>
+    <div class="profile-nav__actions">
+      <button type="button" class="btn btn--ghost btn--small" data-accordion-action="open">모두 펼치기</button>
+      <button type="button" class="btn btn--ghost btn--small" data-accordion-action="close">모두 접기</button>
+    </div>
+  </div>
+</section>
+
+<details class="accordion-section" id="bio" open>
+<summary class="accordion-header">
   <div class="container detail-page--narrow">
     <p class="detail-page__eyebrow">01. Biography</p>
     <h2 class="section__title">약력</h2>
+  </div>
+</summary>
+<div class="accordion-body">
+  <div class="container detail-page--narrow">
     <p>25년 이상 Microsoft 기술 기반의 교육과 컨설팅을 수행하며 기업과 개인의 데이터 역량 향상을 지원해 왔습니다. Microsoft MVP(Most Valuable Professional)와 MCT(Microsoft Certified Trainer)로 활동하며 Power BI, Microsoft Fabric, Excel, Microsoft 365 Copilot 등을 활용한 데이터 분석, 시각화 및 디지털 전환 프로젝트를 수행하고 있습니다. 제조, 유통, 건설, 소비재, 공공기관, 의료 분야 등 다양한 산업에서 데이터 기반 의사결정 체계 구축과 교육을 진행해 왔으며, 휴넷과 인프런 등 다양한 교육 플랫폼을 통해 실무 중심의 온라인 강의도 제공하고 있습니다. 새로운 기술을 꾸준히 학습하고 이를 현업에서 쉽고 효과적으로 활용할 수 있도록 공유하는 것을 사명으로 삼고 있으며, 데이터가 더 많은 사람들에게 가치 있게 활용될 수 있도록 노력하고 있습니다.</p>
   </div>
-</section>
+</div>
+</details>
 
-<section class="section">
+<details class="accordion-section accordion-section--soft" id="areas" open>
+<summary class="accordion-header">
   <div class="container detail-page--narrow">
-    <p class="detail-page__eyebrow">02. Career</p>
-    <h2 class="section__title">학력 및 주요 경력</h2>
-    <ul class="profile-timeline">
-      <li><span class="profile-timeline__period">1998.02 ~ 현재</span>Microsoft 기술 전문가 (MS Power BI, MS-Office, Copilot)</li>
-      <li><span class="profile-timeline__period">2021.10 ~ 현재</span>엘앤에스컨설팅 대표</li>
-      <li><span class="profile-timeline__period">2018.09 ~ 현재</span>한국열린사이버대학교 겸임교수 (MS-Office 활용)</li>
-      <li><span class="profile-timeline__period">2020.10 ~ 현재</span>MCT (Microsoft Certified Trainer)</li>
-      <li><span class="profile-timeline__period">2018.04 ~ 현재</span>Microsoft MVP (Data Platform – Power BI)</li>
-      <li><span class="profile-timeline__period">2021.05 ~ 2023.05</span>NICE지니데이타㈜ BI Team 팀장</li>
-      <li><span class="profile-timeline__period">2003.10 ~ 2004.12</span>드림프리젠테이션 교육기획팀장</li>
-      <li><span class="profile-timeline__period">2000.08 ~ 2003.09</span>피지이홀딩스 교육팀장</li>
-      <li><span class="profile-timeline__period">1998.02 ~ 2000.08</span>뉴호라이즌코리아 전임강사</li>
-      <li><span class="profile-timeline__period">1998.02</span>숙명여자대학교 전산학과 졸업</li>
-    </ul>
-  </div>
-</section>
-
-<section class="section section--soft">
-  <div class="container detail-page--narrow">
-    <p class="detail-page__eyebrow">03. Areas of Instruction</p>
+    <p class="detail-page__eyebrow">02. Areas of Instruction</p>
     <h2 class="section__title">강의 분야</h2>
+  </div>
+</summary>
+<div class="accordion-body">
+  <div class="container detail-page--narrow">
     <div class="profile-client-list">
       <div class="profile-client-list__item">
         <p class="card__title">데이터 분석 과정</p>
         <p class="card__desc">Power BI / Excel BI / Excel을 활용한 데이터 분석 및 시각화</p>
+      </div>
+      <div class="profile-client-list__item">
+        <p class="card__title">MS Cloud Service</p>
+        <p class="card__desc">Microsoft 365, Copilot, Copilot Studio</p>
       </div>
       <div class="profile-client-list__item">
         <p class="card__title">Applications (OA)</p>
@@ -78,62 +89,53 @@ title: About Me
         <p class="card__title">응용/활용 과정</p>
         <p class="card__desc">Excel 실무 활용, Excel VBA, Access 활용, Access VBA</p>
       </div>
-      <div class="profile-client-list__item">
-        <p class="card__title">MS Cloud Service</p>
-        <p class="card__desc">Microsoft 365, Copilot, Copilot Studio</p>
-      </div>
     </div>
   </div>
-</section>
+</div>
+</details>
 
-<section class="section">
-  <div class="container detail-page--narrow">
-    <p class="detail-page__eyebrow">04. Credentials</p>
-    <h2 class="section__title">자격 사항</h2>
-    <ul class="profile-timeline">
-      <li><span class="profile-timeline__period">2021.07 ~ 현재</span>MCA (Power BI Data Analyst Associate) — Microsoft</li>
-      <li><span class="profile-timeline__period">2020.10 ~ 현재</span>MCT (Microsoft Certified Trainer) — Microsoft</li>
-      <li><span class="profile-timeline__period">2018.04 ~ 현재</span>Microsoft MVP (Data Platform – Power BI) — Microsoft</li>
-      <li><span class="profile-timeline__period">2018.03</span>MCSA (BI Reporting) — Microsoft</li>
-      <li><span class="profile-timeline__period">2017.12</span>Microsoft Office Specialist Master (Excel, Word, PowerPoint, Access) — Microsoft</li>
-      <li><span class="profile-timeline__period">2005.10</span>컴퓨터활용능력 1급 — 대한상공회의소</li>
-      <li><span class="profile-timeline__period">2004.12</span>워드프로세서 1급 — 대한상공회의소</li>
-      <li><span class="profile-timeline__period">1999.03</span>MCP (Microsoft Certified Professional) — Microsoft</li>
-    </ul>
-  </div>
-</section>
-
-<section class="section section--soft">
+<details class="accordion-section" id="publications" open>
+<summary class="accordion-header">
   <div class="container">
-    <p class="detail-page__eyebrow">05. Publications</p>
+    <p class="detail-page__eyebrow">03. Publications</p>
     <h2 class="section__title">저서</h2>
+  </div>
+</summary>
+<div class="accordion-body">
+  <div class="container">
     {% assign books = site.books | sort: "order" %}
     {% assign featured_book = books | first %}
     <div class="featured-book">
       <img src="https://image.yes24.com/goods/194523745/XL" alt="{{ featured_book.title }} 표지" class="featured-book__cover">
       <div>
-        <p class="card__title" style="font-size: 1.3rem;">{{ featured_book.title }}</p>
-        <ul class="profile-timeline" style="margin-top: 12px;">
+        <p class="card__title" style="font-size: 1.3rem; margin-bottom: 4px;">{{ featured_book.title }}</p>
+        <ul class="profile-timeline profile-timeline--tight">
           <li><span class="profile-timeline__period">출간일</span>{{ featured_book.published_date }}</li>
           <li><span class="profile-timeline__period">저자</span>{{ featured_book.author }}</li>
           <li><span class="profile-timeline__period">ISBN</span>{{ featured_book.isbn }}</li>
         </ul>
-        <div style="margin-top: 20px; display: flex; gap: 12px;">
+        <div style="margin-top: 12px; display: flex; gap: 12px;">
           <a class="btn btn--primary" href="{{ featured_book.purchase_url }}" target="_blank" rel="noopener">YES24</a>
           <a class="btn btn--primary" href="https://product.kyobobook.co.kr/detail/S000220698837" target="_blank" rel="noopener">교보문고</a>
         </div>
       </div>
     </div>
 
-    <p style="margin-top: 40px; color: var(--color-muted);">그 외 집필 도서</p>
-    <img src="{{ '/assets/images/books.png' | relative_url }}" alt="그 외 집필 도서 목록" style="width: 100%; border-radius: 12px; margin-top: 12px;">
+    <p style="margin-top: 20px; margin-bottom: 8px; color: var(--color-muted);">그 외 집필 도서</p>
+    <img src="{{ '/assets/images/books.png' | relative_url }}" alt="그 외 집필 도서 목록" style="width: 100%; border-radius: 12px;">
   </div>
-</section>
+</div>
+</details>
 
-<section class="section">
+<details class="accordion-section accordion-section--soft" id="clients" open>
+<summary class="accordion-header">
   <div class="container detail-page--narrow">
-    <p class="detail-page__eyebrow">06. Major Clients</p>
+    <p class="detail-page__eyebrow">04. Major Clients</p>
     <h2 class="section__title">주요 업체 강의 경력</h2>
+  </div>
+</summary>
+<div class="accordion-body">
+  <div class="container detail-page--narrow">
     <div class="profile-client-list">
       <div class="profile-client-list__item">
         <p class="card__title">기업</p>
@@ -153,12 +155,18 @@ title: About Me
       </div>
     </div>
   </div>
-</section>
+</div>
+</details>
 
-<section class="section section--soft">
+<details class="accordion-section" id="projects" open>
+<summary class="accordion-header">
   <div class="container detail-page--narrow">
-    <p class="detail-page__eyebrow">07. Projects &amp; Hackathons</p>
+    <p class="detail-page__eyebrow">05. Projects &amp; Hackathons</p>
     <h2 class="section__title">프로젝트 및 해커톤/개발캠프 수행</h2>
+  </div>
+</summary>
+<div class="accordion-body">
+  <div class="container detail-page--narrow">
     <ul class="profile-timeline">
       <li><span class="profile-timeline__period">2025.09</span>한국알콜산업, Power BI 교육 및 개별 프로젝트 컨설팅</li>
       <li><span class="profile-timeline__period">2024.11</span>S-Oil, Power BI 교육 및 개발 캠프 컨설팅</li>
@@ -174,13 +182,20 @@ title: About Me
       <li><span class="profile-timeline__period">2019.09</span>서울디지털재단, 도시문제 해결을 위한 데이터 분석 및 시각화 과정 개발</li>
     </ul>
   </div>
-</section>
+</div>
+</details>
 
-<section class="section">
+<details class="accordion-section accordion-section--soft" id="courses" open>
+<summary class="accordion-header">
   <div class="container">
-    <p class="detail-page__eyebrow">08. Online Courses</p>
+    <p class="detail-page__eyebrow">06. Online Courses</p>
     <h2 class="section__title">주요 온라인 교육 및 집필</h2>
+  </div>
+</summary>
+<div class="accordion-body">
+  <div class="container">
     <ul class="profile-timeline">
+      <li><span class="profile-timeline__period">2026.07</span>성안당, &lt;쉽게 배워 실무에 바로 쓰는 POWER BI&gt; 집필</li>
       <li><span class="profile-timeline__period">2025.05</span>쿠팡풀필먼트서비스, &lt;Power BI 기본, 심화&gt; 사내 온라인 과정 개발</li>
       <li><span class="profile-timeline__period">2024.08</span>휴넷, &lt;오피스 마스터가 알려주는 진짜 엑셀&gt; 과정 개발</li>
       <li><span class="profile-timeline__period">2024.01</span>KG에듀원, &lt;Excel Macro &amp; VBA를 활용한 업무 자동화&gt; 과정 개발</li>
@@ -201,7 +216,56 @@ title: About Me
       <li><span class="profile-timeline__period">2011.08</span>디지털북스, &lt;엑셀&amp;파워포인트 2010&gt; 집필</li>
     </ul>
   </div>
-</section>
+</div>
+</details>
+
+<details class="accordion-section" id="career" open>
+<summary class="accordion-header">
+  <div class="container detail-page--narrow">
+    <p class="detail-page__eyebrow">07. Career</p>
+    <h2 class="section__title">학력 및 주요 경력</h2>
+  </div>
+</summary>
+<div class="accordion-body">
+  <div class="container detail-page--narrow">
+    <ul class="profile-timeline">
+      <li><span class="profile-timeline__period">1998.02 ~ 현재</span>Microsoft 기술 전문가 (MS Power BI, MS-Office, Copilot)</li>
+      <li><span class="profile-timeline__period">2021.10 ~ 현재</span>엘앤에스컨설팅 대표</li>
+      <li><span class="profile-timeline__period">2018.09 ~ 현재</span>한국열린사이버대학교 겸임교수 (MS-Office 활용)</li>
+      <li><span class="profile-timeline__period">2020.10 ~ 현재</span>MCT (Microsoft Certified Trainer)</li>
+      <li><span class="profile-timeline__period">2018.04 ~ 현재</span>Microsoft MVP (Data Platform – Power BI)</li>
+      <li><span class="profile-timeline__period">2021.05 ~ 2023.05</span>NICE지니데이타㈜ BI Team 팀장</li>
+      <li><span class="profile-timeline__period">2003.10 ~ 2004.12</span>드림프리젠테이션 교육기획팀장</li>
+      <li><span class="profile-timeline__period">2000.08 ~ 2003.09</span>피지이홀딩스 교육팀장</li>
+      <li><span class="profile-timeline__period">1998.02 ~ 2000.08</span>뉴호라이즌코리아 전임강사</li>
+      <li><span class="profile-timeline__period">1998.02</span>숙명여자대학교 전산학과 졸업</li>
+    </ul>
+  </div>
+</div>
+</details>
+
+<details class="accordion-section accordion-section--soft" id="credentials" open>
+<summary class="accordion-header">
+  <div class="container detail-page--narrow">
+    <p class="detail-page__eyebrow">08. Credentials</p>
+    <h2 class="section__title">자격 사항</h2>
+  </div>
+</summary>
+<div class="accordion-body">
+  <div class="container detail-page--narrow">
+    <ul class="profile-timeline">
+      <li><span class="profile-timeline__period">2021.07 ~ 현재</span>MCA (Power BI Data Analyst Associate) — Microsoft</li>
+      <li><span class="profile-timeline__period">2020.10 ~ 현재</span>MCT (Microsoft Certified Trainer) — Microsoft</li>
+      <li><span class="profile-timeline__period">2018.04 ~ 현재</span>Microsoft MVP (Data Platform – Power BI) — Microsoft</li>
+      <li><span class="profile-timeline__period">2018.03</span>MCSA (BI Reporting) — Microsoft</li>
+      <li><span class="profile-timeline__period">2017.12</span>Microsoft Office Specialist Master (Excel, Word, PowerPoint, Access) — Microsoft</li>
+      <li><span class="profile-timeline__period">2005.10</span>컴퓨터활용능력 1급 — 대한상공회의소</li>
+      <li><span class="profile-timeline__period">2004.12</span>워드프로세서 1급 — 대한상공회의소</li>
+      <li><span class="profile-timeline__period">1999.03</span>MCP (Microsoft Certified Professional) — Microsoft</li>
+    </ul>
+  </div>
+</div>
+</details>
 
 <section class="cta">
   <div class="container">
