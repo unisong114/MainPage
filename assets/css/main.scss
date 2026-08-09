@@ -582,7 +582,8 @@ a {
 .profile-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 20px;
+  align-items: center;
+  gap: 10px;
 }
 
 .profile-nav a {
@@ -593,6 +594,10 @@ a {
   &:hover {
     color: var(--color-primary);
   }
+}
+
+.profile-nav__separator {
+  color: #cbd5e1;
 }
 
 .profile-nav__actions {
@@ -613,7 +618,7 @@ a {
   display: block;
   cursor: pointer;
   list-style: none;
-  padding: 48px 0 8px;
+  padding: 32px 0;
 
   &::-webkit-details-marker {
     display: none;
