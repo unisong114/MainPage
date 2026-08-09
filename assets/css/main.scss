@@ -528,12 +528,16 @@ a {
 .profile-client-list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  align-items: center;
+  gap: 12px;
 }
 
 .profile-client-list__item {
   background: #fff;
   border: 1px solid #e5e7eb;
   border-radius: var(--radius);
-  padding: 20px 28px;
+  padding: 14px 24px;
+  width: 100%;
+  max-width: 640px;
+  text-align: center;
 }
