@@ -1,34 +1,200 @@
 ---
-layout: page
+layout: default
 title: About Me
 ---
-<!-- TODO: 프로필 사진(배경 제거본)을 assets/images/profile.png 로 추가 후 여기에 <img> 삽입 -->
-<p>송윤희 / unisong114@gmail.com<br>데이터 분석 및 시각화, MS-Office 활용 강의, 컨설팅 및 개발을 진행하는 1인기업가입니다.</p>
-
-<h2>주요 경력</h2>
-<ul>
-  <li>현) 앤앤에스컨설팅 대표</li>
-  <li>현) 한국열린사이버대학교 겸임교수</li>
-  <li>현) Microsoft MVP – Power BI (2018~)</li>
-  <li>현) MCT (Microsoft Certified Trainer, 2020~)</li>
-  <li>전) 나이스지니데이타(주) BI팀 팀장</li>
-  <li>전) PGE Holdings 교육팀 팀장</li>
-</ul>
-
-<h2>자격 및 커뮤니티 활동</h2>
-<div class="logo-row">
-  <img src="{{ '/assets/images/2026_mvp.png' | relative_url }}" alt="Microsoft MVP" class="detail-page__cert-badge">
-  <img src="{{ '/assets/images/2026_mct.png' | relative_url }}" alt="Microsoft Certified Trainer" class="detail-page__cert-badge">
-</div>
-
-<h2>저서</h2>
-<div class="card-grid">
-  {% assign books = site.books | sort: "order" %}
-  {% for book in books %}
-  <div class="card">
-    <p class="card__title">{{ book.title }}</p>
-    <a class="card__link" href="{{ book.url | relative_url }}">책 소개 보기 →</a>
+<section class="section">
+  <div class="container">
+    <!-- TODO: 프로필 사진(배경 제거본)을 assets/images/profile.png 로 교체 -->
+    <div class="profile-intro">
+      <img src="{{ '/assets/images/profile1.png' | relative_url }}" alt="송윤희 프로필 사진" class="profile-intro__photo">
+      <div>
+        <p class="detail-page__eyebrow">Microsoft MVP · MCT</p>
+        <h1 class="detail-page__title" style="margin-bottom: 8px;">송윤희 Yunhee Song</h1>
+        <p class="section__desc" style="margin-bottom: 20px;">Power BI · Microsoft 365 Copilot 전문 강사 · 엘앤에스컨설팅 대표</p>
+        <div class="profile-stats">
+          <div class="profile-stats__item">
+            <p class="stats__number" style="color: var(--color-primary);">25+</p>
+            <p class="stats__label">연간 교육/컨설팅 경력</p>
+          </div>
+          <div class="profile-stats__item">
+            <p class="stats__number" style="color: var(--color-primary);">2018~</p>
+            <p class="stats__label">Microsoft MVP</p>
+          </div>
+          <div class="profile-stats__item">
+            <p class="stats__number" style="color: var(--color-primary);">2020~</p>
+            <p class="stats__label">MCT (Microsoft Certified Trainer)</p>
+          </div>
+          <div class="profile-stats__item">
+            <p class="stats__number" style="color: var(--color-primary);">KR</p>
+            <p class="stats__label">교육 언어</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  {% endfor %}
-</div>
-<p>외 다수 · <a href="{{ '/books/' | relative_url }}">전체 도서 보기 →</a></p>
+</section>
+
+<section class="section section--soft">
+  <div class="container detail-page--narrow">
+    <p class="detail-page__eyebrow">01. Biography</p>
+    <h2 class="section__title">약력</h2>
+    <p>25년 이상 Microsoft 기술 기반의 교육과 컨설팅을 수행하며 기업과 개인의 데이터 역량 향상을 지원해 왔습니다. Microsoft MVP(Most Valuable Professional)와 MCT(Microsoft Certified Trainer)로 활동하며 Power BI, Microsoft Fabric, Excel, Microsoft 365 Copilot 등을 활용한 데이터 분석, 시각화 및 디지털 전환 프로젝트를 수행하고 있습니다. 제조, 유통, 건설, 소비재, 공공기관, 의료 분야 등 다양한 산업에서 데이터 기반 의사결정 체계 구축과 교육을 진행해 왔으며, 휴넷과 인프런 등 다양한 교육 플랫폼을 통해 실무 중심의 온라인 강의도 제공하고 있습니다. 새로운 기술을 꾸준히 학습하고 이를 현업에서 쉽고 효과적으로 활용할 수 있도록 공유하는 것을 사명으로 삼고 있으며, 데이터가 더 많은 사람들에게 가치 있게 활용될 수 있도록 노력하고 있습니다.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container detail-page--narrow">
+    <p class="detail-page__eyebrow">02. Career</p>
+    <h2 class="section__title">학력 및 주요 경력</h2>
+    <ul class="profile-timeline">
+      <li><span class="profile-timeline__period">1998.02 ~ 현재</span>Microsoft 기술 전문가 (MS Power BI, MS-Office, Copilot)</li>
+      <li><span class="profile-timeline__period">2021.10 ~ 현재</span>엘앤에스컨설팅 대표</li>
+      <li><span class="profile-timeline__period">2018.09 ~ 현재</span>한국열린사이버대학교 겸임교수 (MS-Office 활용)</li>
+      <li><span class="profile-timeline__period">2020.10 ~ 현재</span>MCT (Microsoft Certified Trainer)</li>
+      <li><span class="profile-timeline__period">2018.04 ~ 현재</span>Microsoft MVP (Data Platform – Power BI)</li>
+      <li><span class="profile-timeline__period">2021.05 ~ 2023.05</span>NICE지니데이타㈜ BI Team 팀장</li>
+      <li><span class="profile-timeline__period">2003.10 ~ 2004.12</span>드림프리젠테이션 교육기획팀장</li>
+      <li><span class="profile-timeline__period">2000.08 ~ 2003.09</span>피지이홀딩스 교육팀장</li>
+      <li><span class="profile-timeline__period">1998.02 ~ 2000.08</span>뉴호라이즌코리아 전임강사</li>
+      <li><span class="profile-timeline__period">1998.02</span>숙명여자대학교 전산학과 졸업</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section section--soft">
+  <div class="container">
+    <p class="detail-page__eyebrow">03. Areas of Instruction</p>
+    <h2 class="section__title">강의 분야</h2>
+    <div class="card-grid">
+      <div class="card">
+        <p class="card__title">데이터 분석 과정</p>
+        <p class="card__desc">Power BI / Excel BI / Excel을 활용한 데이터 분석 및 시각화</p>
+      </div>
+      <div class="card">
+        <p class="card__title">Applications (OA)</p>
+        <p class="card__desc">MS-Office (Word, Excel, PowerPoint, Access, Outlook, OneNote)</p>
+      </div>
+      <div class="card">
+        <p class="card__title">응용/활용 과정</p>
+        <p class="card__desc">Excel 실무 활용, Excel VBA, Access 활용, Access VBA</p>
+      </div>
+      <div class="card">
+        <p class="card__title">MS Cloud Service</p>
+        <p class="card__desc">Microsoft 365, Copilot, Copilot Studio</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container detail-page--narrow">
+    <p class="detail-page__eyebrow">04. Credentials</p>
+    <h2 class="section__title">자격 사항</h2>
+    <ul class="profile-timeline">
+      <li><span class="profile-timeline__period">2021.07 ~ 현재</span>MCA (Power BI Data Analyst Associate) — Microsoft</li>
+      <li><span class="profile-timeline__period">2020.10 ~ 현재</span>MCT (Microsoft Certified Trainer) — Microsoft</li>
+      <li><span class="profile-timeline__period">2018.04 ~ 현재</span>Microsoft MVP (Data Platform – Power BI) — Microsoft</li>
+      <li><span class="profile-timeline__period">2018.03</span>MCSA (BI Reporting) — Microsoft</li>
+      <li><span class="profile-timeline__period">2017.12</span>Microsoft Office Specialist Master (Excel, Word, PowerPoint, Access) — Microsoft</li>
+      <li><span class="profile-timeline__period">2005.10</span>컴퓨터활용능력 1급 — 대한상공회의소</li>
+      <li><span class="profile-timeline__period">2004.12</span>워드프로세서 1급 — 대한상공회의소</li>
+      <li><span class="profile-timeline__period">1999.03</span>MCP (Microsoft Certified Professional) — Microsoft</li>
+    </ul>
+    <div class="logo-row" style="margin-top: 24px;">
+      <img src="{{ '/assets/images/2026_mvp.png' | relative_url }}" alt="Microsoft MVP" class="detail-page__cert-badge">
+      <img src="{{ '/assets/images/2026_mct.png' | relative_url }}" alt="Microsoft Certified Trainer" class="detail-page__cert-badge">
+    </div>
+  </div>
+</section>
+
+<section class="section section--soft">
+  <div class="container">
+    <p class="detail-page__eyebrow">05. Major Clients</p>
+    <h2 class="section__title">주요 업체 강의 경력</h2>
+    <div class="card-grid">
+      <div class="card">
+        <p class="card__title">기업</p>
+        <p class="card__desc">Microsoft, 삼성화재, 삼성전자, 삼성SDI, 삼성바이오로직스, LS그룹, GS건설, 포스코E&amp;C, SK이노베이션, SKIET, kt ds, 한국투자증권, DB그룹, 동양생명, 현대백화점, 현대홈쇼핑, 쿠팡풀필먼트서비스, 한국타이어, 한국알콜산업, 대상, 스타벅스코리아, 하이트진로, 쿠라레코리아, 오스템임플란트, 앰코코리아, DRB동일, 뷰웍스 등 다수</p>
+      </div>
+      <div class="card">
+        <p class="card__title">공기관</p>
+        <p class="card__desc">서울시인재개발원, 국가공무원인재개발원, 상하수도협회, 인천시교육청, 인천시교육연수원, 한국보건산업진흥원, 성남시교육연수원, 천안시지속발전협의회 등</p>
+      </div>
+      <div class="card">
+        <p class="card__title">대학교</p>
+        <p class="card__desc">서울대학교, 중앙대학교, 숙명여자대학교, 국민대학교, 아주대학교, 동국대학교, 동덕여자대학교, 경인교육대학교, 부산교육대학교, 동남보건대학교 등</p>
+      </div>
+      <div class="card">
+        <p class="card__title">기타</p>
+        <p class="card__desc">서울삼성병원, 법무법인 율촌, 필립모리스, 스카니아코리아, JTI, 까르티에, 셀트리온, 쿠퍼비전, 다케다제약, 멀티캠퍼스, 휴넷, IGM세계경영연구원, 오피스튜터 등</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <p class="detail-page__eyebrow">06. Publications &amp; Online Courses</p>
+    <h2 class="section__title">저서</h2>
+    <div class="card-grid">
+      {% assign books = site.books | sort: "order" %}
+      {% for book in books %}
+      <div class="card">
+        <p class="card__title">{{ book.title }}</p>
+        <a class="card__link" href="{{ book.url | relative_url }}">책 소개 보기 →</a>
+      </div>
+      {% endfor %}
+    </div>
+    <p style="margin-top: 12px;"><a href="{{ '/books/' | relative_url }}">전체 도서 보기 →</a></p>
+
+    <h3 style="margin-top: 48px;">주요 온라인 교육 및 집필</h3>
+    <ul class="profile-timeline">
+      <li><span class="profile-timeline__period">2025.05</span>쿠팡풀필먼트서비스, &lt;Power BI 기본, 심화&gt; 사내 온라인 과정 개발</li>
+      <li><span class="profile-timeline__period">2024.08</span>휴넷, &lt;오피스 마스터가 알려주는 진짜 엑셀&gt; 과정 개발</li>
+      <li><span class="profile-timeline__period">2024.01</span>KG에듀원, &lt;Excel Macro &amp; VBA를 활용한 업무 자동화&gt; 과정 개발</li>
+      <li><span class="profile-timeline__period">2023.04</span>휴넷, &lt;데이터 시각화가 이렇게 쉽다고! Power BI&gt; 과정 개발</li>
+      <li><span class="profile-timeline__period">2022.12</span>경기도평생교육진흥원, &lt;Power BI를 활용한 데이터 분석&gt; 과정 개발</li>
+      <li><span class="profile-timeline__period">2022.08</span>KG에듀원, &lt;엑셀을 활용한 데이터 분석&gt; 과정 개발</li>
+      <li><span class="profile-timeline__period">2021.06</span>시대인, &lt;Power BI 기본+활용 3rd Edition&gt; 공저</li>
+      <li><span class="profile-timeline__period">2021.03</span>인프런, &lt;쉽고 빠르게 익히는 Power BI(심화 1)&gt; 과정 개발</li>
+      <li><span class="profile-timeline__period">2020.08</span>인프런, &lt;쉽고 빠르게 익히는 Power BI(기본편)&gt;, &lt;파워 피벗 - Data Modeling&gt;, &lt;파워 피벗 - DAX&gt;, &lt;Power Query&gt; 과정 개발</li>
+      <li><span class="profile-timeline__period">2020.04</span>시대인, &lt;Power BI 기본+활용 2nd Edition&gt; 공저</li>
+      <li><span class="profile-timeline__period">2019.12</span>휴넷, &lt;세상에서 제일 쉬운 엑셀로 배우는 데이터 시각화&gt; 과정 개발</li>
+      <li><span class="profile-timeline__period">2019.07</span>라오니스, &lt;Excel 2019&gt; 과정 개발</li>
+      <li><span class="profile-timeline__period">2019.04</span>시대인, &lt;Power BI 기본+활용&gt; 공저</li>
+      <li><span class="profile-timeline__period">2019.02</span>RMP, &lt;Power BI 기본&gt; 과정 개발</li>
+      <li><span class="profile-timeline__period">2018.05</span>시대인, &lt;MOS Word, Excel, Access 2016&gt; 집필</li>
+      <li><span class="profile-timeline__period">2017.04</span>비제이퍼블릭, &lt;데이터가 돋보이는 Microsoft Power BI&gt; 공저</li>
+      <li><span class="profile-timeline__period">2017.03</span>시대인, &lt;엑셀 2016&gt; 집필</li>
+      <li><span class="profile-timeline__period">2011.08</span>디지털북스, &lt;엑셀&amp;파워포인트 2010&gt; 집필</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section section--soft">
+  <div class="container detail-page--narrow">
+    <p class="detail-page__eyebrow">07. Projects &amp; Hackathons</p>
+    <h2 class="section__title">프로젝트 및 해커톤/개발캠프 수행</h2>
+    <ul class="profile-timeline">
+      <li><span class="profile-timeline__period">2025.09</span>한국알콜산업, Power BI 교육 및 개별 프로젝트 컨설팅</li>
+      <li><span class="profile-timeline__period">2024.11</span>S-Oil, Power BI 교육 및 개발 캠프 컨설팅</li>
+      <li><span class="profile-timeline__period">2024.09</span>SK이노베이션, Power BI 교육 및 개발 캠프 컨설팅</li>
+      <li><span class="profile-timeline__period">2021.08</span>리치몬트그룹 까르띠에, Power BI 교육 및 개별 프로젝트 컨설팅</li>
+      <li><span class="profile-timeline__period">2021.04</span>GS건설, Power BI 해커톤(HOVERING) 교육 및 컨설팅</li>
+      <li><span class="profile-timeline__period">2021.10</span>강서구 스마트도시 기본 계획 대시보드 개발 프로젝트</li>
+      <li><span class="profile-timeline__period">2021.01</span>OB맥주, 주류 구매 고객 및 상권 분석 대시보드 개발 프로젝트</li>
+      <li><span class="profile-timeline__period">2020.10</span>필립모리스코리아, CDW(Commercial Data Warehouse) 구축 프로젝트</li>
+      <li><span class="profile-timeline__period">2020.08</span>SK건설, 부문별 KPI 대시보드 개발 프로젝트</li>
+      <li><span class="profile-timeline__period">2020.04</span>JTI Korea, 담배 구매 고객 및 패턴 분석 대시보드 개발 프로젝트</li>
+      <li><span class="profile-timeline__period">2019.06</span>LS오토모티브, 부서별 데이터 분석 및 시각화 프로젝트 컨설팅</li>
+      <li><span class="profile-timeline__period">2019.09</span>서울디지털재단, 도시문제 해결을 위한 데이터 분석 및 시각화 과정 개발</li>
+    </ul>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <h2>기업 강의를 계획 중이신가요?</h2>
+    <a class="btn btn--primary btn--large" href="{{ '/contact/' | relative_url }}">강의 문의하기</a>
+  </div>
+</section>
