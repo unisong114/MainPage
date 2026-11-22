@@ -1,0 +1,186 @@
+- category: copilot
+  title: Microsoft 365 Copilot
+  icon: "AI"
+  description: Copilot Chat과 Microsoft 365 앱의 생성형 AI를 실제 업무에 연결하는 과정입니다.
+  courses:
+    - code: MS-4004
+      type: 업무 활용
+      level: Beginner
+      duration: 1일
+      title: Microsoft 365 Copilot 활용 사례로 업무 역량 높이기
+      english: Empower your workforce with Microsoft 365 Copilot Use Cases
+      url: https://learn.microsoft.com/training/courses/ms-4004
+    - code: MS-4018
+      type: 업무 활용
+      level: Intermediate
+      duration: 1일
+      title: Copilot으로 초안 작성·분석·발표 자료 만들기
+      english: Draft, analyze, and present with Microsoft Copilot
+      url: https://learn.microsoft.com/training/courses/ms-4018
+    - code: MS-4019
+      type: 에이전트
+      level: Beginner
+      duration: 1일
+      title: 에이전트로 일상 업무 프로세스 바꾸기
+      english: Transform your everyday business processes with agents
+      url: https://learn.microsoft.com/training/courses/ms-4019
+    - code: MS-4021
+      type: 체험 과정
+      level: Beginner
+      duration: 1일
+      title: Copilot 몰입 체험
+      english: Copilot Immersion Experience
+      url: https://learn.microsoft.com/training/courses/ms-4021
+
+- category: studio
+  title: Copilot Studio
+  icon: "CS"
+  description: 노코드 에이전트 제작부터 Microsoft 365 Copilot 확장까지 다루는 과정입니다.
+  courses:
+    - code: MS-4014
+      type: 에이전트
+      level: Beginner
+      duration: 1일
+      title: AI 에이전트 만들기 입문
+      english: Introduction to building AI agents
+      url: https://learn.microsoft.com/training/courses/ms-4014
+    - code: MS-4022
+      type: 에이전트
+      level: Intermediate
+      duration: 1일
+      title: Copilot Studio로 Microsoft 365 Copilot 확장하기
+      english: Extend Microsoft 365 Copilot in Copilot Studio
+      url: https://learn.microsoft.com/training/courses/ms-4022
+    - code: CUSTOM-AGENT
+      type: 맞춤 워크숍
+      level: Intermediate
+      duration: 1-2일
+      title: Copilot Studio 에이전트 설계·구축 실무
+      english: Copilot Studio agent design and implementation workshop
+      url: /contact/
+
+- category: power-platform
+  title: Power Platform
+  icon: "PP"
+  description: 앱 개발, 자동화, 데이터 분석, 거버넌스를 실무 중심으로 학습하는 과정입니다.
+  courses:
+    - code: PL-900T00
+      type: 자격증 과정
+      level: Beginner
+      duration: 1일
+      title: Microsoft Power Platform 기초
+      english: Microsoft Power Platform Fundamentals
+      credential: PL-900
+      url: https://learn.microsoft.com/training/courses/pl-900t00
+    - code: PL-200T00
+      type: 자격증 과정
+      level: Intermediate
+      duration: 4일
+      title: Microsoft Power Platform 기능 컨설턴트
+      english: Microsoft Power Platform Functional Consultant
+      credential: PL-200
+      url: https://learn.microsoft.com/training/courses/pl-200t00
+    - code: PL-400T00
+      type: 자격증 과정
+      level: Advanced
+      duration: 5일
+      title: Microsoft Power Platform 개발자
+      english: Microsoft Power Platform Developer
+      credential: PL-400
+      url: https://learn.microsoft.com/training/courses/pl-400t00
+    - code: PL-600T00
+      type: 자격증 과정
+      level: Advanced
+      duration: 4일
+      title: Microsoft Power Platform 솔루션 아키텍트
+      english: Microsoft Power Platform Solution Architect
+      credential: PL-600
+      url: https://learn.microsoft.com/training/courses/pl-600t00
+    - code: PL-7001
+      type: 실습 과정
+      level: Beginner
+      duration: 1일
+      title: Power Apps 캔버스 앱 만들기
+      english: Create a canvas app in Power Apps
+      url: https://learn.microsoft.com/training/courses/pl-7001
+
+- category: data
+  title: 데이터 · Microsoft Fabric
+  icon: "BI"
+  description: 데이터 준비, 시각화, 의미 모델링, Fabric 기반 분석까지 연결하는 과정입니다.
+  courses:
+    - code: PL-300T00
+      type: 자격증 과정
+      level: Intermediate
+      duration: 3일
+      title: Power BI 데이터 분석가
+      english: Microsoft Power BI Data Analyst
+      credential: PL-300
+      url: https://learn.microsoft.com/training/courses/pl-300t00
+    - code: DP-900T00
+      type: 자격증 과정
+      level: Beginner
+      duration: 1일
+      title: Microsoft Azure 데이터 기초
+      english: Microsoft Azure Data Fundamentals
+      credential: DP-900
+      url: https://learn.microsoft.com/training/courses/dp-900t00
+    - code: DP-600T00
+      type: 자격증 과정
+      level: Intermediate
+      duration: 4일
+      title: Microsoft Fabric 분석 솔루션 구현
+      english: Implementing Analytics Solutions Using Microsoft Fabric
+      credential: DP-600
+      url: https://learn.microsoft.com/training/courses/dp-600t00
+    - code: DP-700T00
+      type: 자격증 과정
+      level: Intermediate
+      duration: 3일
+      title: Microsoft Fabric 데이터 엔지니어
+      english: Microsoft Fabric Data Engineer
+      credential: DP-700
+      url: https://learn.microsoft.com/training/courses/dp-700t00
+    - code: CUSTOM-BI
+      type: 맞춤 워크숍
+      level: All levels
+      duration: 1-3일
+      title: 현업 데이터로 배우는 Power BI 실무
+      english: Practical Power BI workshop with your organization's data
+      url: /contact/
+
+- category: ai
+  title: Azure AI & AI Apps
+  icon: "AI+"
+  description: 생성형 AI 애플리케이션과 에이전트 솔루션을 설계·구현하는 개발자 과정입니다.
+  courses:
+    - code: AI-900T00
+      type: 자격증 과정
+      level: Beginner
+      duration: 1일
+      title: Microsoft Azure AI 기초
+      english: Microsoft Azure AI Fundamentals
+      credential: AI-900
+      url: https://learn.microsoft.com/training/courses/ai-900t00
+    - code: AI-102T00
+      type: 자격증 과정
+      level: Intermediate
+      duration: 4일
+      title: Azure AI 솔루션 설계 및 구현
+      english: Designing and Implementing an Azure AI Solution
+      credential: AI-102
+      url: https://learn.microsoft.com/training/courses/ai-102t00
+    - code: AI-3016
+      type: 실습 과정
+      level: Intermediate
+      duration: 1일
+      title: Azure AI Search로 생성형 AI 앱 개발하기
+      english: Develop generative AI apps in Azure
+      url: https://learn.microsoft.com/training/courses/ai-3016
+    - code: AI-3004
+      type: 실습 과정
+      level: Intermediate
+      duration: 1일
+      title: Azure AI Vision으로 컴퓨터 비전 솔루션 만들기
+      english: Develop computer vision solutions with Azure AI Vision
+      url: https://learn.microsoft.com/training/courses/ai-3004
